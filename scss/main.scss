@@ -1,0 +1,42 @@
+@import '_variables.scss';
+@import '_reset.scss';
+@import '_typography.scss';
+@import '_button.scss';
+@import '_structure.scss';
+
+// Designs
+//
+// This is the atoms chapter. Atoms are the only parts that contain actual
+// class and style definitions. The higher level abastractions are mere
+// composites of the existing atoms.
+//
+// Styleguide 1.0
+
+/*
+Main colors
+
+$primary-color - Primary color
+$secondary-color - Secondary color
+$primary-action-color - Primary button color
+$default-action-color - Default button color and link color
+$tertiary-color - Used for input hovers and hilights
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1
+*/
+
+/*
+Grays
+
+$gray-black - Black color
+$gray-steel - Steel color
+$gray-slate - Slate color
+$gray-silver - Silver color
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1.1
+*/

@@ -1,0 +1,488 @@
+/* Main color definitions */
+/* Button and link colors */
+h1.sg,
+h2.sg,
+h3.sg,
+h4.sg,
+h5.sg {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+  margin: 1.414em 0 .5em;
+  color: #444; }
+
+h1.sg {
+  font-size: 3.157em;
+  margin-top: .5em; }
+
+h2.sg {
+  font-size: 2.369em; }
+
+h3.sg {
+  font-size: 1.777em; }
+
+h4.sg {
+  font-size: 1.333em; }
+
+h4.sg,
+h5.sg {
+  font-weight: 500; }
+
+/*
+Buttons and inputs
+
+Links, buttons, input boxes etc.
+
+Styleguide 2.0
+ */
+/*
+Links
+
+Link styles used in the styleguide
+
+.sg - Normal link
+:hover - Hover
+
+markup:
+<a href="#" class="sg {$modifiers}">Link text</a>
+
+Styleguide 2.1
+*/
+/* TODO
+:active - Active
+:visited - Visited
+*/
+a.sg {
+  font-family: "Poppins";
+  display: inline;
+  cursor: pointer;
+  text-decoration: none;
+  color: #2fbb71; }
+
+/*
+Buttons
+
+Button styles used in the styleguide
+
+.default - Default button
+.primary - Primary button
+.success - Success button
+.outline - Success button
+:disabled - Disabled button
+
+markup:
+<button class="btn {$modifiers}">Button text</button>
+
+Styleguide 2.3
+ */
+.btn {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding: 10px 20px;
+  font-family: "Poppins";
+  border-radius: 3px;
+  color: #fff; }
+  .btn.default {
+    background: #2fbb71; }
+    .btn.default:hover {
+      background: #2aa765; }
+  .btn.primary {
+    background: #ff8b00; }
+    .btn.primary:hover {
+      background: #e67d00; }
+  .btn.success {
+    background: #ff0055; }
+    .btn.success:hover {
+      background: #e6004d; }
+  .btn.outline {
+    background: transparent;
+    border: 1px solid #ff8b00;
+    color: #ff8b00; }
+
+/*
+Buttons sizes
+
+Button styles used in the styleguide
+
+.default.btn.btn-sm - Button small
+.default.btn.btn-lg - Button Large
+.default.btn.btn-xl - Button Extra Large
+.default.btn.btn-block - Button Block
+.default.btn.btn-xl.btn-block - Button Block
+.outline.btn.btn-xl.btn-block - Button Block Ouline
+
+markup:
+<button class="{$modifiers}">Button text</button>
+
+Styleguide 2.3.1
+ */
+.btn.btn-sm {
+  padding: 5px 10px; }
+
+.btn.btn-lg {
+  padding: 20px 30px; }
+
+.btn.btn-xl {
+  padding: 30px 50px; }
+
+.btn.btn-block {
+  display: block;
+  width: 100%; }
+
+/*
+Input
+
+Input styles used in the styleguide
+
+.sm - full width
+.default - inputbox
+.block - full width
+
+markup:
+<label>Input Label</label>
+<input type='text' class="{$modifiers}">
+
+Styleguide 2.4
+*/
+label {
+  display: block;
+  font-family: "Poppins"; }
+
+input {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 10px 10px;
+  border-radius: 2px;
+  border: 1px solid #8492A6;
+  display: block; }
+  input:focus {
+    outline: none;
+    border-color: #39d37d; }
+  input.block {
+    width: 100%; }
+  input.sm {
+    padding: 5px 5px; }
+
+/*
+Structure
+
+Grid, Nav, Header, Footer Etc.
+
+Styleguide 4.0
+*/
+/*
+Nav
+
+Navigation of the site
+
+Markup:
+<ul class="nav">
+	<li><a href="#" class="active">Home</a></li>
+	<li><a href="#">About</a></li>
+	<li><a href="#">Feature</a></li>
+	<li><a href="#">Contact</a></li>
+</ul>
+
+Styleguide 4.1
+*/
+ul.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  ul.nav li {
+    float: left; }
+    ul.nav li a {
+      font-family: "Poppins";
+      display: block;
+      margin-right: 10px;
+      background: #1F2D3D;
+      padding: 10px 20px;
+      color: #fff;
+      border-radius: 3px;
+      text-decoration: none; }
+      ul.nav li a:hover {
+        background: #ff8b00; }
+      ul.nav li a.active {
+        background: #ff8b00; }
+
+/*
+Cards
+
+Navigation of the site
+
+Markup:
+<div class="card hovercard">
+    <div class="cardheader">
+    </div>
+    <div class="avatar">
+        <img alt="" src="http://lorempixel.com/100/100/people/9/">
+    </div>
+    <div class="info">
+        <div class="title">
+            <a target="_blank" href="http://scripteden.com/">Script Eden</a>
+        </div>
+        <div class="desc">Passionate designer</div>
+        <div class="desc">Curious developer</div>
+        <div class="desc">Tech geek</div>
+    </div>
+    <div class="bottom">
+        <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a class="btn btn-danger btn-sm" rel="publisher"
+           href="https://plus.google.com/+ahmshahnuralam">
+            <i class="fa fa-google-plus"></i>
+        </a>
+        <a class="btn btn-primary btn-sm" rel="publisher"
+           href="https://plus.google.com/shahnuralam">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam">
+            <i class="fa fa-behance"></i>
+        </a>
+    </div>
+</div>
+
+
+Styleguide 4.2
+*/
+.card {
+  font-family: "Poppins";
+  width: 250px;
+  padding-top: 20px;
+  margin: 10px 0 20px 0;
+  background-color: rgba(214, 224, 226, 0.2);
+  border-top-width: 0;
+  border-bottom-width: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.card .card-heading {
+  padding: 0 20px;
+  margin: 0; }
+
+.card .card-heading.simple {
+  font-size: 20px;
+  font-weight: 300;
+  color: #777;
+  border-bottom: 1px solid #e5e5e5; }
+
+.card .card-heading.image img {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  margin-right: 15px;
+  vertical-align: top;
+  border: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.card .card-heading.image .card-heading-header {
+  display: inline-block;
+  vertical-align: top; }
+
+.card .card-heading.image .card-heading-header h3 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: #262626; }
+
+.card .card-heading.image .card-heading-header span {
+  font-size: 12px;
+  color: #999999; }
+
+.card .card-body {
+  padding: 0 20px;
+  margin-top: 20px; }
+
+.card .card-media {
+  padding: 0 20px;
+  margin: 0 -14px; }
+
+.card .card-media img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.card .card-actions {
+  min-height: 30px;
+  padding: 0 20px 20px 20px;
+  margin: 20px 0 0 0; }
+
+.card .card-comments {
+  padding: 20px;
+  margin: 0;
+  background-color: #f8f8f8; }
+
+.card .card-comments .comments-collapse-toggle {
+  padding: 0;
+  margin: 0 20px 12px 20px; }
+
+.card .card-comments .comments-collapse-toggle a,
+.card .card-comments .comments-collapse-toggle span {
+  padding-right: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.card-comments .media-heading {
+  font-size: 13px;
+  font-weight: bold; }
+
+.card.people {
+  position: relative;
+  display: inline-block;
+  width: 170px;
+  height: 300px;
+  padding-top: 0;
+  margin-left: 20px;
+  overflow: hidden;
+  vertical-align: top; }
+
+.card.people:first-child {
+  margin-left: 0; }
+
+.card.people .card-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 170px;
+  height: 150px;
+  background-color: #ffffff; }
+
+.card.people .card-top.green {
+  background-color: #53a93f; }
+
+.card.people .card-top.blue {
+  background-color: #427fed; }
+
+.card.people .card-info {
+  position: absolute;
+  top: 150px;
+  display: inline-block;
+  width: 100%;
+  height: 101px;
+  overflow: hidden;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.card.people .card-info .title {
+  display: block;
+  margin: 8px 14px 0 14px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #404040; }
+
+.card.people .card-info .desc {
+  display: block;
+  margin: 8px 14px 0 14px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 16px;
+  color: #737373;
+  text-overflow: ellipsis; }
+
+.card.people .card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  line-height: 29px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.card.hovercard {
+  position: relative;
+  padding-top: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(214, 224, 226, 0.2); }
+
+.card.hovercard .cardheader {
+  background: url("http://lorempixel.com/850/280/nature/4/");
+  background-size: cover;
+  height: 135px; }
+
+.card.hovercard .avatar {
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px; }
+
+.card.hovercard .avatar img {
+  width: 100px;
+  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.5); }
+
+.card.hovercard .info {
+  padding: 4px 8px 10px; }
+
+.card.hovercard .info .title {
+  margin-bottom: 4px;
+  font-size: 24px;
+  line-height: 1;
+  color: #262626;
+  vertical-align: middle; }
+
+.card.hovercard .info .desc {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  color: #737373;
+  text-overflow: ellipsis; }
+
+.card.hovercard .bottom {
+  padding: 0 20px;
+  margin-bottom: 17px; }
+
+/*
+Main colors
+
+$primary-color - Primary color
+$secondary-color - Secondary color
+$primary-action-color - Primary button color
+$default-action-color - Default button color and link color
+$tertiary-color - Used for input hovers and hilights
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1
+*/
+/*
+Grays
+
+$gray-black - Black color
+$gray-steel - Steel color
+$gray-slate - Slate color
+$gray-silver - Silver color
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1.1
+*/

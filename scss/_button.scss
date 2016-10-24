@@ -1,0 +1,158 @@
+/*
+Buttons and inputs
+
+Links, buttons, input boxes etc.
+
+Styleguide 2.0
+ */
+
+/*
+Links
+
+Link styles used in the styleguide
+
+.sg - Normal link
+:hover - Hover
+
+markup:
+<a href="#" class="sg {$modifiers}">Link text</a>
+
+Styleguide 2.1
+*/
+
+/* TODO
+:active - Active
+:visited - Visited
+*/
+
+a.sg {
+	font-family: "Poppins";
+	display: inline;
+	cursor: pointer;
+	text-decoration: none;
+	color: $default-action-color;
+}
+
+/*
+Buttons
+
+Button styles used in the styleguide
+
+.default - Default button
+.primary - Primary button
+.success - Success button
+.outline - Success button
+:disabled - Disabled button
+
+markup:
+<button class="btn {$modifiers}">Button text</button>
+
+Styleguide 2.3
+ */
+
+.btn {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	padding: 10px 20px;
+	font-family: $font-display;
+	border-radius: 3px;
+	color: $white-default;
+	&.default {
+		background: $default-action-color;
+		&:hover {
+			background: darken($default-action-color, $action-color-change);
+		}
+	}
+	&.primary {
+		background: $primary-action-color;
+		&:hover {
+			background: darken($primary-action-color, $action-color-change);
+		}
+	}
+	&.success {
+		background: $tertiary-color;
+		&:hover {
+			background: darken($tertiary-color, $action-color-change);
+		}
+	}
+	&.outline {
+		background: transparent;
+		border:1px solid $primary-action-color;
+		color: $primary-action-color;
+	}
+}
+
+/*
+Buttons sizes
+
+Button styles used in the styleguide
+
+.default.btn.btn-sm - Button small
+.default.btn.btn-lg - Button Large
+.default.btn.btn-xl - Button Extra Large
+.default.btn.btn-block - Button Block
+.default.btn.btn-xl.btn-block - Button Block
+.outline.btn.btn-xl.btn-block - Button Block Ouline
+
+markup:
+<button class="{$modifiers}">Button text</button>
+
+Styleguide 2.3.1
+ */
+
+.btn {
+ 	&.btn-sm {
+ 		padding: 5px 10px;
+ 	}
+ 	&.btn-lg {
+		padding: 20px 30px;
+ 	}
+ 	&.btn-xl {
+		padding: 30px 50px;
+ 	}
+ 	&.btn-block {
+ 		display: block;
+ 		width: 100%;
+ 	}
+}
+
+/*
+Input
+
+Input styles used in the styleguide
+
+.sm - full width
+.default - inputbox
+.block - full width
+
+markup:
+<label>Input Label</label>
+<input type='text' class="{$modifiers}">
+
+Styleguide 2.4
+*/
+
+label {
+	display: block;
+	font-family: $font-display;
+}
+input {
+	font-family: $font-display;
+	margin: 0;
+	padding: 10px 10px; 
+	border-radius: 2px;
+	border: 1px solid $gray-silver;
+	display: block;
+	&:focus {
+		outline: none;
+		border-color: $primary-color;
+	}
+	&.block {
+		width: 100%;
+	}
+	&.sm {
+		padding: 5px 5px; 
+	}
+}	
+
