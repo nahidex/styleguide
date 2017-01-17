@@ -1,22 +1,22 @@
 .btn.default.pseudo-class-hover {
-  background: #2aa765;
+  background: #119949;
 }
 
 .btn.primary.pseudo-class-hover {
-  background: #e67d00;
+  background: #e600d0;
 }
 
 .btn.success.pseudo-class-hover {
-  background: #e6004d;
+  background: #1f00e6;
 }
 
 input.pseudo-class-focus {
   outline: none;
-  border-color: #39d37d;
+  border-color: #ff0000;
 }
 
 ul.nav li a.pseudo-class-hover {
-  background: #ff8b00;
+  background: #ff00e7;
 }
 
 .card.people.pseudo-class-first-child {

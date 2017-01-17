@@ -1,0 +1,52 @@
+/*
+Alert
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores qui maxime eligendi, ratione quod autem corporis fuga ex officiis minus, illum nihil totam sit alias, modi blanditiis beatae recusandae nostrum!
+
+Styleguide 5
+*/
+
+/*
+Alert Variations
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloribus tempore, rem quam. Deleniti totam harum pariatur magni optio iure cumque beatae aliquid recusandae alias corporis enim eaque explicabo, hic necessitatibus. Fuga eaque facilis optio deserunt incidunt. Error, doloremque. Fugiat dolorum vel et, impedit ullam porro officia est quidem tempore!
+
+.alert-info - this is alert info
+.alert-success - this is alert success
+.alert-warning - this is alert warning
+.alert-danger - this is alert danger
+
+Markup:
+<div class="alert {$modifiers}">
+	<p class="alert-header">This is Alert Header</p>
+	<p class="alert-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, placeat.</p>
+</div>
+
+Styleguide 5.1
+*/
+
+.alert {
+	padding: 10px 20px;
+	font-family: $font-display;
+	p {
+		margin: 0;
+	}
+	> .alert-header {
+		font-size: 18px;
+	}
+	> .alert-body {
+		font-size: 12px;
+	}
+	&.alert-info {
+		@include alert($alert-info-color);
+	}
+	&.alert-success {
+		@include alert($alert-success-color);
+	}
+	&.alert-warning {
+		@include alert($alert-warning-color);
+	}
+	&.alert-danger {
+		@include alert($alert-dagner-color);
+	}
+}

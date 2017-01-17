@@ -1,0 +1,5 @@
+@mixin alert($alert-color){
+	background: lighten($alert-color, $alert-color-change);
+	border: 1px solid $alert-color;
+	color: darken($alert-color, $alert-font-color-change);
+}

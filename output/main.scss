@@ -1,8 +1,10 @@
-@import '_variables.scss';
-@import '_reset.scss';
-@import '_typography.scss';
-@import '_button.scss';
-@import '_structure.scss';
+@import 'variables';
+@import 'mixin';
+@import 'reset';
+@import 'typography';
+@import 'button';
+@import 'structure';
+@import 'alert';
 
 // Designs
 //
@@ -28,6 +30,20 @@ Styleguide 1.1
 */
 
 /*
+Alert Colors
+
+$alert-info-color - Blue
+$alert-success-color - Green
+$alert-warning-color - Yellow
+$alert-dagner-color - Red
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1.1
+*/
+
+/*
 Grays
 
 $gray-black - Black color
@@ -38,5 +54,5 @@ $gray-silver - Silver color
 markup:
 <div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
 
-Styleguide 1.1.1
+Styleguide 1.1.2
 */

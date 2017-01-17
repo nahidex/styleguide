@@ -58,7 +58,7 @@ a.sg {
   display: inline;
   cursor: pointer;
   text-decoration: none;
-  color: #2fbb71; }
+  color: #13b054; }
 
 /*
 Buttons
@@ -85,21 +85,21 @@ Styleguide 2.3
   border-radius: 3px;
   color: #fff; }
   .btn.default {
-    background: #2fbb71; }
+    background: #13b054; }
     .btn.default:hover {
-      background: #2aa765; }
+      background: #119949; }
   .btn.primary {
-    background: #ff8b00; }
+    background: #ff00e7; }
     .btn.primary:hover {
-      background: #e67d00; }
+      background: #e600d0; }
   .btn.success {
-    background: #ff0055; }
+    background: #2200ff; }
     .btn.success:hover {
-      background: #e6004d; }
+      background: #1f00e6; }
   .btn.outline {
     background: transparent;
-    border: 1px solid #ff8b00;
-    color: #ff8b00; }
+    border: 1px solid #ff00e7;
+    color: #ff00e7; }
 
 /*
 Buttons sizes
@@ -159,7 +159,7 @@ input {
   display: block; }
   input:focus {
     outline: none;
-    border-color: #39d37d; }
+    border-color: #ff0000; }
   input.block {
     width: 100%; }
   input.sm {
@@ -203,9 +203,9 @@ ul.nav {
       border-radius: 3px;
       text-decoration: none; }
       ul.nav li a:hover {
-        background: #ff8b00; }
+        background: #ff00e7; }
       ul.nav li a.active {
-        background: #ff8b00; }
+        background: #ff00e7; }
 
 /*
 Cards
@@ -460,6 +460,60 @@ Styleguide 4.2
   margin-bottom: 17px; }
 
 /*
+Alerts
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptatum, velit ea rem laborum earum libero ducimus illum, reprehenderit deleniti fugiat veritatis. Libero necessitatibus doloremque illum, commodi quasi ipsam blanditiis repudiandae eos, tenetur ex quo recusandae mollitia porro veritatis iste!
+
+Styleguide 5.0
+*/
+/*
+Alerts Variations
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptatum, velit ea rem laborum earum libero ducimus illum, reprehenderit deleniti fugiat veritatis. Libero necessitatibus doloremque illum, commodi quasi ipsam blanditiis repudiandae eos, tenetur ex quo recusandae mollitia porro veritatis iste!
+
+.alert-info - this is alert info
+.alert-success - this is alert success
+.alert-warning - this is alert warning
+.alert-danger - this is alert danger
+
+Markup:
+<div class="alert {$modifiers}">
+	<p class="alert-header">This is alert header</p>
+	<p class="alert-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, esse.</p>
+</div>
+
+Styleguide 5.1
+*/
+.alert {
+  padding: 10px 20px;
+  margin: 0;
+  border-radius: 3px;
+  font-family: "Poppins"; }
+  .alert p {
+    margin: 0;
+    padding: 0; }
+  .alert > .alert-header {
+    font-size: 18px; }
+  .alert > .alert-body {
+    font-size: 12px; }
+  .alert.alert-info {
+    background: #e1f0fa;
+    border: 1px solid #3498db;
+    color: #196090; }
+  .alert.alert-success {
+    background: #d1f5e0;
+    border: 1px solid #2ecc71;
+    color: #1b7943; }
+  .alert.alert-warning {
+    background: #fdedd4;
+    border: 1px solid #f39c12;
+    color: #976008; }
+  .alert.alert-danger {
+    background: #f2c9c5;
+    border: 1px solid #c0392b;
+    color: #6d2018; }
+
+/*
 Main colors
 
 $primary-color - Primary color
@@ -474,6 +528,19 @@ markup:
 Styleguide 1.1
 */
 /*
+Alert Colors
+
+$alert-info-color - Blue
+$alert-success-color - Green
+$alert-warning-color - Yellow
+$alert-dagner-color - Red
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1.1
+*/
+/*
 Grays
 
 $gray-black - Black color
@@ -484,5 +551,5 @@ $gray-silver - Silver color
 markup:
 <div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
 
-Styleguide 1.1.1
+Styleguide 1.1.2
 */
